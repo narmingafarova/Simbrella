@@ -1,0 +1,95 @@
+.what_we_do {
+  padding: 35px 0 60px;
+  .head_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 40px;
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      color: $darkblue;
+    }
+    a {
+      height: 56px;
+      padding: 0 100px 0 24px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 56px;
+      color: $darkgrey;
+      text-decoration: none;
+      background: url(/dist/icons/link_orange_icon.svg) no-repeat
+        calc(100% - 24px) 50%;
+      box-shadow: inset 0 0 0 3px $lightblue;
+      border-radius: 12px;
+      animation-duration: 0.15s;
+      transition: all 0.15s linear;
+      &:hover {
+        background: url(/dist/icons/link_orange_icon.svg) no-repeat
+          calc(100% - 20px) 50%;
+        box-shadow: inset 0 0 0 3px $orange;
+      }
+    }
+  }
+  .do_three {
+    display: flex;
+    justify-content: space-between;
+    article {
+      width: calc(33.333% - 20px);
+      padding: 40px 20px;
+      position: relative;
+      box-shadow: inset 0 0 0 1px $lightblue2;
+      border-radius: 4px;
+      animation-duration: 0.3s;
+      transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.03);
+      }
+      .article-image {
+        width: 100%;
+        position: relative;
+        height: 230px;
+        text-align: center;
+        .sequence_before {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0px;
+          left: 0px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-color: white;
+          z-index: 1;
+          opacity: 1;
+        }
+      }
+      h3 {
+        padding: 0 0 16px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $darkgrey;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        color: $greyblue;
+      }
+      a {
+        // display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

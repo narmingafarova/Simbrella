@@ -12,6 +12,11 @@
 
 //Sections
 @import "../scss/sections/header.scss";
+@import "../scss/sections/what_we_do.scss";
+
+body {
+  font-family: $open-sans;
+}
 
 .container {
   width: 100%;
